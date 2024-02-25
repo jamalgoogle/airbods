@@ -322,31 +322,7 @@ header nav a{
 .carousel.showDetail .list .item:nth-child(2) .detail .checkout{
     animation-delay: 0.8s;
 }
-/* .arrows{
-    position: absolute;
-    bottom: 10px;
-    width: 1140px;
-    max-width: 90%;
-    display: flex;
-    justify-content: space-between;
-    left: 50%;
-    transform: translateX(-50%);
-} */
-/* #prev,
-#next{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    font-family: monospace;
-    border: 1px solid #5555;
-    font-size: large;
-    bottom: 20%;
-    left: 10%;
-} */
-/* #next{
-    left: unset;
-    right: 10%;
-} */
+
 #back{
     position: absolute;
     z-index: 100;
@@ -364,14 +340,7 @@ header nav a{
     transition: opacity 0.5s;
     cursor: pointer;
 }
-/* .carousel.showDetail #back{
-    opacity: 1;
-} */
-/* .carousel.showDetail #prev,
-.carousel.showDetail #next{
-    opacity: 0;
-    pointer-events: none;
-} */
+
 .carousel::before{
     width: 500px;
     height: 300px;
@@ -386,10 +355,7 @@ header nav a{
     transform: translate(-50%, -50%);
     transition: 1s;
 }
-/* .carousel.showDetail::before{
-    transform: translate(-100%, -50%) rotate(90deg);
-    filter: blur(130px);
-} */
+
 @media screen and (max-width: 991px){
     /* ipad, tablets */
     .carousel .list .item{
@@ -436,11 +402,4 @@ header nav a{
         width: max-content;
         float: right;
     }
-}
-
-.hidebtn{
-    display: none;
-}
-.showbtn{
-    display: auto;
 }
