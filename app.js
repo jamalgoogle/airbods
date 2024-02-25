@@ -18,8 +18,6 @@ document.onkeydown = function(e){
     }
 }
 
-let unAcceppClick;
-
 const showSlider = (type) => {
     carousel.classList.remove('next', 'prev');
     let items = document.querySelectorAll('.carousel .list .item');
@@ -30,9 +28,4 @@ const showSlider = (type) => {
         listHTML.prepend(items[items.length -1]);
         carousel.classList.add('prev');
     }
-    clearTimeout(unAcceppClick);
-    unAcceppClick = setTimeout(()=>{
-        nextButton.style.pointerEvents = 'auto';
-        prevButton.style.pointerEvents = 'auto';
-    }, 2000)
 ;}
